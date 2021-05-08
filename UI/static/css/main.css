@@ -1,0 +1,165 @@
+
+body
+{
+    background-color: gray;
+    background-image: url(Images/HotNonVeg.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header /* Since Header is not a class we dont write "." in front of it like we do for classes */
+{
+    /* background-color: blue; */
+    height: 100px;
+    width: 1600px;
+    text-align: center; /* This will align the contents of the page (Including images) in the middle vertically */
+}
+
+nav
+{
+    background-color: rgba(22, 22, 22, 0.8);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom:5px;
+    /* width: 1600px; */ /* DEFINED BY PARENT CLASS 'container' */
+}
+
+main/* This container contains the h1 and p of the html part. So we can do the common design changes for h1 and p here also instead of doin it separately for h1 and p */
+{
+    /* background-color: orange; */
+    height: 400px;
+    /* width: 1600px; */ /* This line of code was causing trouble for it to fit it into the container. This is why I sould define the container width only for the class container only. */
+    /* Padding will move the contents of the conatiner by px */
+    padding-left: 240px; /* LOOK IN THE END FOR MARGIN VS PADDING */ 
+    padding-right: 240px;
+    padding-bottom: 20px; /* This line replaces padding-top: 80px; just cuz it looks better with the replacement*/
+    text-align: center; /* This aligns the contents of p, h1 and a tags to the center. This I could write in the tags separately but doing that wasnt working for a tag for some reason I dont know */
+
+}
+
+#MAPandVIDEO /* Height and width in the left, right and MAPandVideo elements are the sizes for the containers on the browser but not the size of the content. Here videos are the contents */
+{
+    width: 1600px;
+}
+
+.Left
+{
+    width: 750px;
+    height: 600px;
+    float: left; /* This Specifies how a box should be floated. It may be set for any element, but only applies to elements that generate boxes which are not absolutely positioned. It seems the default floating  postion for a boxx is bottom*/
+}
+.Right
+{
+    width: 750px;
+    height: 600px;
+    float: right;
+}
+
+/*.rw-conversation-container
+{
+    background-color: lemonchiffon !important;
+}*/
+
+.rw-header{
+    background-color: rgb(252, 92, 0) !important;
+}
+
+.rw-messages-container /*the central area where the messages appear*/
+{
+    background-color: lemonchiffon !important;
+}
+.rw-client{ /*message area of the sender*/
+       background-color: #d62c06 !important; 
+}
+
+.rw-response { /*Reply area of the bot*/
+    background-color: #d62c06 !important;
+}
+
+.conversation-container close-button {
+    background-color: #801801 !important;
+}
+
+.rw-launcher{
+    background-color: #F5360D !important;
+}
+.rw-messages-container .rw-replies{
+    background-color: #f50d0d !important; 
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, 0.719);
+
+}
+
+
+.container /* This is the custom defined class that is joined to the custom div conatiner that conatines all other pre-defineed divs such as header, main etc */
+{
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1600px; 
+    /* We didnt define this class's height because since its a container its length or height depends upon its contents */
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif; /* This sets the font for the TEXT in the html header h1. Here there are three fonts to choose from. Thesee fonts must be present on the computer of the user visitng the website. There are 3 fonts because if first one is not available on the user's computer then the second one will be applied if available. Most of the computers usually have the last font */
+    /* text-align: center; */
+}
+
+p{
+    font-size: 30px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+}
+
+/* a is a selector specifier for hyperLink attribute a-tag. This  specifier is for all A tags in our HTML code. However we can write specific selector specifiers for diffrent A-tags also */
+a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+}
+
+/* This nav a is called compound selector*/
+footer p
+{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center; /* This line centers the text horizontally. But it wasnt working when I worte it in the compund selector 'footer p'. */
+    /* width: 1600px; */
+    /* padding-left: 500px; */
+    /* adding-right: 300px; */
+    /* text-align: center; NOT WORKING SOMETIMES RANDOMLY*/
+    /* display:inline-block; This centered the <p> line in the middle vertically but I dont know how to use it properly yet so Here I will use zero height and then equal padding top and bottom to slign the text vertically in the center */
+
+}
+
+
+nav a 
+ {
+     text-decoration: none; /* This removes the lines below the hyperlinks. By default hyperLinks are underlined */
+     font-size: 12px; /* Sets the font size for A tags in the nav */
+     padding-left: 80px; /* Sets the distance between A tags on left */
+     padding-right: 80px;
+ }
+
+ /* Apparently there is another way to remove the underline from our a-Tags. We can do it also by creating a custom class called .Underline to write the text-decoration: none in it so that we can link specific a-tags with it remove the underLine. However that would have increased the code redundancy and would have taken more time. 
+ 
+ .noUnderLine
+ {
+     text-decoration: none;
+ }
+
+To use above class we would have to like for example, <a href="#">HOME class = "noUnderLine"</a>
+
+ */
+
+/* MARGIN VS PADDING : padding will ommit the contents of the container to align them where as margin will ommit the container itself to align it. This will cause the background container to show in some cases */
+/* Padding for a container can be done more effectively by first giving it zero height and then after the contants have been defined then giving padding for the container. This ensures equal padding up and below the contents */

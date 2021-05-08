@@ -1,0 +1,162 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- python:
+    use_entities: true
+- MySql:
+    use_entities: true
+- Tableau:
+    use_entities: true
+- DataScience:
+    use_entities: true
+- AI:
+    use_entities: true
+- spark:
+    use_entities: true
+- hadoop:
+    use_entities: true
+- azure:
+    use_entities: true
+- IOT:
+    use_entities: true
+- ML:
+    use_entities: true
+- DL:
+    use_entities: true
+- BS:
+    use_entities: true
+- hypothesis:
+    use_entities: true
+- SLR:
+    use_entities: true
+- MLR:
+    use_entities: true
+- LR:
+    use_entities: true
+- clustering:
+    use_entities: true
+- PCA:
+    use_entities: true
+- AR:
+    use_entities: true
+- RS:
+    use_entities: true
+- TM:
+    use_entities: true
+- NB:
+    use_entities: true
+- KNN:
+    use_entities: true
+- DTrees:
+    use_entities: true
+- RForests:
+    use_entities: true
+- NN:
+    use_entities: true
+- SVM:
+    use_entities: true
+- Forecasting:
+    use_entities: true
+- Aexcelr:
+    use_entities: true
+- R:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_python:
+  - text: Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. It is used for:- web development (server-side), software development, mathematics, system scripting.
+  - text: Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.
+  - text: Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc). Python has a simple syntax similar to the English language. Python has syntax that allows developers to write programs with fewer lines than some other programming languages. Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick. Python can be treated in a procedural way, an object-oriented way or a functional way.
+  utter_R:
+  - text: ok
+  utter_MySql:
+  - text: ok
+  utter_Tableau:
+  - text: ok
+  utter_DataScience:
+  - text: ok
+  utter_AI:
+  - text: ok
+  utter_spark:
+  - text: ok
+  utter_hadoop:
+  - text: ok
+  utter_azure:
+  - text: ok
+  utter_IOT:
+  - text: ok
+  utter_ML:
+  - text: :- Machine learning is the science of getting computers to act without being explicitly programmed. Machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. It is so widespread that unknowingly we use it many a times in our daily life.
+  utter_DL:
+  - text: ok
+  utter_BS:
+  - text: ok
+  utter_hypothesis:
+  - text: It is the way of testing results of an experiment whether they are valid and meaningful and have not occured just by chance. If the results have happened just by chance then the experiment cannot be repeated and is not reusable.
+  utter_SLR:
+  - text: ok
+  utter_MLR:
+  - text: ok
+  utter_LR:
+  - text: Logistic Regression often referred as logit model is a technique to predict the binary outcome from a linear combination of predictor variables. For example, if you want to predict whether a particular political leader will win the election or not. In this case, the outcome of prediction is binary i.e. 0 or 1 (Win/Lose). The predictor variables here would be the amount of money spent for election campaigning of a particular candidate, the amount of time spent in campaigning, etc.
+  utter_clustering:
+  - text: Our entire population is divided into clusters or sections and then the clusters are randomly selected. All the elements of the cluster are used for sampling. Clusters are identified using details such as age, sex, location etc. Single Stage Cluster Sampling or Two Stage Cluster Sampling can be used to performm Cluster Sampling
+  utter_PCA:
+  - text: PCA is a method for transforming features in a dataset by combining them into uncorrelated linear combinations. These new features, or principal components, sequentially maximize the variance represented (i.e. the first principal component has the most variance, the second principal component has the second most, and so on). As a result, PCA is useful for dimensionality reduction because you can set an arbitrary variance cutoff.
+  utter_AR:
+  - text: ok
+  utter_RS:
+  - text: A subclass of information filtering systems that are meant to predict the preferences or ratings that a user would give to a product. Recommender systems are widely used in movies, news, research articles, products, social tags, music, etc.
+  utter_TM:
+  - text: ok
+  utter_NB:
+  - text: naive Bayes is so ‘naive’ because it assumes that all of the features in a data set are equally important and independent. As we know, these assumption are rarely true in real world scenario.
+  utter_KNN:
+  - text: ok
+  utter_DTrees:
+  - text: Decision Tree is a superised machine learning algorithm used for classification and regression analysis. It is a tree-like structure in which internal node represents test on an attribute, each branch represents outcome of test and each leafe node represents class label.
+  utter_RForests:
+  - text: Random Forest is an Ensemble Classifer. As opposed to building a single decision tree, random forest builds many decision trees and combines the output of all the decision trees to give a stable output.
+  utter_NN:
+  - text: Neural Network is a supervised machine learning algorithm which is inspired by human nervous system and it replicates the similar to how human brain is trained. It consists of Input Layers, Hidden Layers, & Output Layers.
+  utter_SVM:
+  - text: Here we plot each data point in n-dimensional space with the value of each dimension being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiate the classes very well
+  utter_Forecasting:
+  - text: ok
+  utter_Aexcelr:
+  - text: ok
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions: []
+forms: {}
+e2e_actions: []
